@@ -6,7 +6,7 @@ module Whenever
     attr_reader :interval
 
     def initialize job, interval
-      @job      = job[1]
+      @job      = job[1][0]
       @interval = interval
     end
 
