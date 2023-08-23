@@ -7,6 +7,7 @@ module Whenever
 
     def initialize job, interval
       @job      = job
+      job.options ||= {}
       @interval = interval
     end
 
